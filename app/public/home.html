@@ -8,30 +8,93 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <!-- Font Awesome Glyphicons -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class=""><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
-      <hr>
-      <h2 class="">Answer a few basic questions. </h2>
-      <h2 class="">Then find the friend with the greatest compatibility!</h2>
-      <br>
-      <div class="">
-        <a href="/survey">
-          <button type="button" class="btn btn-lg btn-primary">
-            <h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button>
-        </a>
+  <style type="text/css">
+    body {
+      background-color: #e1e4ea;
+      background-size: 100%;
+    }
+
+    .page-header {
+      border-bottom: none;
+    }
+
+    #gosurvey {
+      background-color: #e1e4ea;
+      border: 2px solid grey;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      padding-top: 100px;
+    }
+
+    .options {
+      width: 100%;
+      border-radius: 4px;
+      height: 30px;
+      border-color: grey;
+    }
+
+    footer.navbar-fixed-bottom {
+      background: transparent;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      color: blue;
+      font-size: 16px;
+    }
+
+    footer a {
+      color: blue;
+    }
+
+    .panel-default {
+      background-color: white;
+      border: 4px dotted grey;
+      padding: 30px;
+    }
+
+    .survey {
+      padding-bottom: 20px;
+    }
+
+    #survey {
+      padding-top: 0px;
+    }
+
+    #submit {
+      background-color: #e1e4ea;
+    }
+
+    #name,
+    #photo {
+      border-color: grey;
+    }
+  </style>
+  <div class="bg">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Friend Finder</h1>
       </div>
+      <div class="panel panel-default panel-body text-center">
+        <h2 class="">Find your perfect match! </h2>
+        <br>
+        <div class="survey">
+          <a href="/survey">
+            <button type="button" id="gosurvey" class="btn btn-md btn-default">
+              <h4> Go to Survey</h4></button>            
+          </a>
+        </div>
+      </div>
+      <footer class="">
+        <div class="container text-center">
+          <p><a href="/api/friends">API Friends List</a> | <a href="https://mrrfriendfinder.herokuapp.com">Heroku App</a></p>
+        </div>
+      </footer>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://myappfriendfinder.herokuapp.com">Heroku App</a></p>
-      </div>
-    </footer>
   </div>
 </body>
 

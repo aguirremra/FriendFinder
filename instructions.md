@@ -111,3 +111,6 @@ Coding Boot Camp (C) 2016. All Rights Reserved.
 
 image hoster
 https://imgbb.com/
+
+
+<a href="https://imgbb.com/"><img src="https://thumb.ibb.co/d79LQw/sid.jpg" alt="sid" border="0"></a>
