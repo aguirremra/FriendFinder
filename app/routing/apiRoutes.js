@@ -16,9 +16,9 @@ module.exports = function(app) {
   // API POST Requests
   app.post('/api/friends', function(req, res) {
       var userData = req.body;
-      console.log(userData);
+      // console.log(userData);
       var userResponses = userData.scores;
-      console.log(userResponses);
+      // console.log(userResponses);
 
       // // //compute
       var matchName = '';
@@ -27,18 +27,18 @@ module.exports = function(app) {
 
       //loop through all friends
       for (var i = 0; i < friendsData.length; i++) {
-      	console.log('friend: ' + JSON.stringify(friendsData[i]));
+      	// console.log('friend: ' + JSON.stringify(friendsData[i]));
 
       	var totalDifference = 0;
       	for (var j = 0; j < friendsData[i].scores[j]; j++) {
       		totalDifference += Math.abs(parseInt(userResponses[j]) - parseInt(friendsData[i].scores[j]));
       	}
-      	console.log("totalDifference: " + totalDifference);
+      	// console.log("totalDifference: " + totalDifference);
       	//check lowest
       	if(totalDifference <= friendDiff){
-      		console.log('closest match: ' + totalDifference);
-      		console.log('friend name: ' + friendsData[i].name);
-      		console.log('friend image: ' + friendsData[i].photo);
+      		// console.log('closest match: ' + totalDifference);
+      		// console.log('friend name: ' + friendsData[i].name);
+      		// console.log('friend image: ' + friendsData[i].photo);
 
       		friendDiff = totalDifference;
       		matchName = friendsData[i].name;

@@ -16,6 +16,22 @@ var friendsList = [
       "4",
       "5"
     ]
+  },
+  {
+    name: "Julia",
+    photo: "https://thumb.ibb.co/b8hOFw/Julia_Roberts.jpg",
+    scores: [
+      "1",
+      "4",
+      "5",
+      "3",
+      "2",
+      "2",
+      "5",
+      "1",
+      "3",
+      "5"
+    ]
   }
 ];
 
